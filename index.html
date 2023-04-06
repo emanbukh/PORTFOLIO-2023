@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Hello | EmanBukhori | My</title>
+    <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div id="header1">
+        <div>⭐</div>
+        <h3 class="marginheaderleft">Daydreaming-Developer</h3>
+        <a class="marginheaderleft" id="EMC" href="">@EMC</a>
+      </div>
+      <div id="menu"><h3>MENU</h3></div>
+      <div id="header2">
+        <div>🌕</div>
+        <h3 class="marginheaderleft">KEDAH,MALAYSIA</h3>
+        <output class="marginheaderleft" id="output"></output>
+      </div>
+    </header>
+    <section id="hero">
+      <div>
+        <p class="animation" id="name1">EMAN</p>
+        <p id="midtext">NEVER QUIT DREAMING</p>
+        <p class="animation" id="name2">BUKHORI</p>
+      </div>
+    </section>
+    <div class="scrolltxt">
+      <a href="#content">
+        <span class="scroll-animated">S</span
+        ><span class="scroll-animated">C</span
+        ><span class="scroll-animated">R</span
+        ><span class="scroll-animated">O</span
+        ><span class="scroll-animated">L</span
+        ><span class="scroll-animated">L</span
+        ><span class="scroll-animated margin-scroll-left">T</span
+        ><span class="scroll-animated">O</span
+        ><span class="scroll-animated margin-scroll-left">E</span
+        ><span class="scroll-animated">X</span
+        ><span class="scroll-animated">P</span
+        ><span class="scroll-animated">L</span
+        ><span class="scroll-animated">O</span
+        ><span class="scroll-animated">R</span
+        ><span class="scroll-animated">E</span></a
+      >
+    </div>
+    <section id="content">
+      <div>
+        <div class="card center-txt" id="project">
+          <div class="left-txt"><h1>DILIGENT</h1></div>
+          <div class="right-txt"><h1>WORKS</h1></div>
+          <div id="portfolio-txt"><h4>PORTFOLIO😎</h4></div>
+        </div>
+
+        <div class="card" id="project-stack">
+          <div id="card-stack">
+            <div class="card-project">1</div>
+            <div class="card-project">2</div>
+            <div class="card-project">3</div>
+            <div class="card-project">4</div>
+            <div class="card-project">5</div>
+            <div class="card-project">6</div>
+            <div class="card-project">7</div>
+            <div class="card-project">8</div>
+            <div class="card-project">9</div>
+            <div class="card-project">10</div>
+          </div>
+          <div id="btn-parent-link">
+            <div class="btn-link">1</div>
+            <div class="btn-link">2</div>
+            <div class="btn-link">3</div>
+            <div class="btn-link">4</div>
+            <div class="btn-link">5</div>
+            <div class="btn-link">6</div>
+            <div class="btn-link">7</div>
+            <div class="btn-link">8</div>
+            <div class="btn-link">9</div>
+            <div class="btn-link">10</div>
+          </div>
+        </div>
+        <div class="card" id="about">
+          <div>
+            <h3>#A LITTLE ABOUT ME</h3>
+            <div>
+              <h1 id="me">I'M EMAN</h1>
+              <h1 id="me2">A TECHNOLOGY ENTHUSIAST</h1>
+              <h1 id="me3">
+                USING AND LEARNING ABOUT NEW GADGETS, SOFTWARE, AND DIGITAL
+                TOOLS, AND IS EXCITED ABOUT THE POSSIBILITIES OF TECHNOLOGY TO
+                IMPROVE OUR LIVES.
+              </h1>
+              <h1 id="me4">LIVING ON PLANET EARTH 🌏 FROM 1999</h1>
+            </div>
+            <div>
+              <div id="me6">
+                <h5>emanbukhori</h5>
+                <span
+                  ><a href="https://github.com/emanbukh">
+                    <img class="me5" src="asset/github.png" alt="" /></a></span
+                ><span <span
+                  ><a href="https://www.instagram.com/eman_bukhori/">
+                    <img
+                      class="me5"
+                      src="asset/instagram.png"
+                      alt="" /></a></span
+                ><span
+                  ><a href="https://www.facebook.com/em4nbukhori"
+                    ><img
+                      class="me5"
+                      src="asset/facebook.png"
+                      alt="" /></a></span
+                ><span
+                  ><a href="https://twitter.com/em4nbukhori"
+                    ><img
+                      class="me5"
+                      src="asset/317749_social media_tweet_twitter_social_icon.png"
+                      alt="" /></a
+                ></span>
+              </div>
+            </div>
+            <div class="card" id="contact">
+              <form id="contact-form">
+                <h2>Contact Me Form</h2>
+                <input
+                  type="text"
+                  id="firstName"
+                  placeholder="First Name"
+                  required
+                /><input
+                  type="text"
+                  id="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="text" id="mobile" placeholder="Mobile" required />
+                <h3>Leave Your Message Here</h3>
+                <textarea id="message" required></textarea>
+                <input type="button" value="Send Email" id="button" onclick="sendEmail()" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="luxon.js"></script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
