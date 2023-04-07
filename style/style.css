@@ -553,15 +553,16 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 0.8rem;
   }
   #header2 {
-    max-width: 70%;
+    min-width: 50%;
+    max-width: 50%;
     font-size: 0.8rem;
   }
   label {
-    width: 10%;
+    width: 15%;
   }
   .toggle {
-    width: 5%;
-    height: 4%;
+    width: 8%;
+    height: 5%;
   }
   #menu {
     margin-top: 48%;
