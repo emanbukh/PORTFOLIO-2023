@@ -12,21 +12,27 @@ setInterval(function () {
 
 //card-stack and button link stack
 let stack = document.querySelector("#card-stack");
+let btnStack = document.querySelector(".btn-stack");
+let btnClick =document.querySelector(".btn-link");
 
 [...stack.children].reverse().forEach((i) => stack.append(i));
+[...btnStack.children].reverse().forEach((i) => btnStack.append(i));
 
-document.querySelector("#btn-parent-link").addEventListener("click", swap);
+btnClick.addEventListener("click", swap);
 function swap(e) {
   let card = document.querySelector(".card-project:last-child");
   let btnLink = document.querySelector(".btn-link:last-child");
-
-  if (e.target !== btnLink) return;
+  let btnLink2 = document.querySelector(".btn-link-2:last-child");
+  
+  if (e.target !== btnClick) return;
   card.style.animation = "swap 700ms forwards ";
-
+  btnLink2.style.animation = "weep";
   setTimeout(() => {
     card.style.animation = "";
-    btnLink.style.animation = "";
+    btnLink2.style.animation = "";
     stack.prepend(card);
+    btnStack.prepend(btnLink2);
+    
   }, 700);
 }
 
