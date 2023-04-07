@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="/style/font-6/css/all.css" />
+
     <title>Hello | EmanBukhori | My</title>
     <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
   </head>
@@ -21,7 +24,43 @@
         <h3 class="marginheaderleft">Daydreaming-Developer</h3>
         <a class="marginheaderleft" id="EMC" href="">@EMC</a>
       </div>
-      <div id="menu"><h3>MENU</h3></div>
+      <label>
+        <input id="hamburger" type="checkbox" />
+        <div class="toggle">
+          <span class="topline common"></span>
+          <span class="middleline common"></span>
+          <span class="bottomline common"></span>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li >
+              <a href="#project"
+                ><i
+                  style="margin: 0 50%; transform: translate(-50%)"
+                  class="fas fa-regular fa-diagram-project"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#project-stack"
+                ><i class="fas fa-sharp fa-light fa-credit-card"></i>Project</a
+              >
+            </li>
+            <li>
+              <a href="#about"
+                ><i class="fas fa-regular fa-user-astronaut fa-flip"></i
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#contact-form"
+                ><i class="fa-solid fa-inbox"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </label>
       <div id="header2">
         <div>🌕</div>
         <h3 class="marginheaderleft">KEDAH,MALAYSIA</h3>
@@ -128,31 +167,33 @@
                 ></span>
               </div>
             </div>
-            <div class="card" id="contact">
-              <form id="contact-form">
-                <h2>Contact Me Form</h2>
-                <input
-                  type="text"
-                  id="firstName"
-                  placeholder="First Name"
-                  required
-                /><input
-                  type="text"
-                  id="lastName"
-                  placeholder="Last Name"
-                  required
-                />
-                <input type="email" id="email" placeholder="Email" required />
-                <input type="text" id="mobile" placeholder="Mobile" required />
-                <h3>Leave Your Message Here</h3>
-                <textarea id="message" required></textarea>
-                <input type="button" value="Send Email" id="button" onclick="sendEmail()" />
-              </form>
-            </div>
           </div>
         </div>
       </div>
     </section>
+    <footer id="foot">
+      <div class="card" id="contact">
+        <form id="contact-form">
+          <h2>Contact Me Form</h2>
+          <input
+            type="text"
+            id="firstName"
+            placeholder="First Name"
+            required
+          /><input type="text" id="lastName" placeholder="Last Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="mobile" placeholder="Mobile" required />
+          <h3>Leave Your Message Here</h3>
+          <textarea id="message" required></textarea>
+          <input
+            type="button"
+            value="Send Email"
+            id="button"
+            onclick="sendEmail()"
+          />
+        </form>
+      </div>
+    </footer>
 
     <script src="luxon.js"></script>
     <script src="script.js"></script>

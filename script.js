@@ -38,9 +38,9 @@ function swap(e) {
 
 function sendEmail() {
   Email.send({
-    Host: "smtp.gmail.com",
+    Host: "smtp.elasticemail.com",
     Username: "emanbukhori.git@gmail.com",
-    Password: "1999March@faith",
+    Password: "01F99FF8B77FE1FEB0AEF7AA396A4D36AD90",
     To: "em4nbukhori@gmail.com",
     From: document.getElementById("#email"),
     Subject: "New Contact Form Enquiry",
@@ -55,6 +55,19 @@ function sendEmail() {
       document.getElementById("mobile").value +
       "<br> Message: " +
       document.getElementById("message").value,
-  }).then(message => alert("message sent"));
- 
+  }).then((message) => alert("message sent"));
 }
+//menu 
+let menuDOM = document.querySelector("#menu")
+let burgerMenuDOM = document.querySelector("#hamburger")
+
+burgerMenuDOM.addEventListener("change", check)
+function check(){
+  if(this.checked){
+    menuDOM.style.transform="translate(0,215%)"
+    console.log(check);
+  }else{
+    menuDOM.style.transform="translate(0,-215%)"
+  }
+}
+
