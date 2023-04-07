@@ -12,25 +12,21 @@ setInterval(function () {
 
 //card-stack and button link stack
 let stack = document.querySelector("#card-stack");
-let btnStack = document.querySelector("#btn-parent-link");
 
 [...stack.children].reverse().forEach((i) => stack.append(i));
 
-[...btnStack.children].reverse().forEach((i) => btnStack.append(i));
-
-stack.addEventListener("click", swap);
+document.querySelector("#btn-parent-link").addEventListener("click", swap);
 function swap(e) {
   let card = document.querySelector(".card-project:last-child");
   let btnLink = document.querySelector(".btn-link:last-child");
-  if (e.target !== card) return;
+
+  if (e.target !== btnLink) return;
   card.style.animation = "swap 700ms forwards ";
-  btnLink.style.animation = "weep 0ms none";
 
   setTimeout(() => {
     card.style.animation = "";
     btnLink.style.animation = "";
     stack.prepend(card);
-    btnStack.prepend(btnLink);
   }, 700);
 }
 
@@ -57,17 +53,16 @@ function sendEmail() {
       document.getElementById("message").value,
   }).then((message) => alert("message sent"));
 }
-//menu 
-let menuDOM = document.querySelector("#menu")
-let burgerMenuDOM = document.querySelector("#hamburger")
+//menu
+let menuDOM = document.querySelector("#menu");
+let burgerMenuDOM = document.querySelector("#hamburger");
 
-burgerMenuDOM.addEventListener("change", check)
-function check(){
-  if(this.checked){
-    menuDOM.style.transform="translate(0,215%)"
+burgerMenuDOM.addEventListener("change", check);
+function check() {
+  if (this.checked) {
+    menuDOM.style.transform = "translate(0,215%)";
     console.log(check);
-  }else{
-    menuDOM.style.transform="translate(0,-215%)"
+  } else {
+    menuDOM.style.transform = "translate(0,-215%)";
   }
 }
-
