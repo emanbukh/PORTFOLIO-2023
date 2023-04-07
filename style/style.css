@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -84,7 +84,6 @@ label {
   font-weight: 600;
   text-decoration: none;
   color: #252c35;
-  
 }
 #menu ul li a i {
   width: 25%;
@@ -157,6 +156,7 @@ section#hero {
   background-image: url(/asset/adam-chang-IWenq-4JHqo-unsplash.jpg);
   background-position: center;
   background-size: contain;
+  
 }
 section#hero div {
   width: 100%;
