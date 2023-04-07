@@ -569,7 +569,9 @@ textarea::-webkit-scrollbar-thumb {
     width: 30%;
     height: 35%;
   }
-
+section#content{
+  margin-top: 100px;
+}
   section#hero {
     width: 480vw;
     max-width: 100%;
@@ -586,12 +588,20 @@ textarea::-webkit-scrollbar-thumb {
 .left-txt {
   
   font-size: 4rem;
-  padding-top: 20%;
+  padding-top: 30%;
  
 }.right-txt {
  padding-left: 80%;
+ padding-bottom: 10%;
   font-size: 4rem;
  
+}
+.card {
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  position: sticky;
+  top: 0;
 }
 .card-project {
   background-color: #fff;
